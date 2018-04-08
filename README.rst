@@ -5,23 +5,31 @@ Example App with Selenium
 Development
 ===========
 
-1. Setup the virtualenv or use the existing:
+1. Setup the virtualenv or use the existing.
 
-   - Prepare the coding environment with python2
+   - Python2:
 
-     ::
+     - Prepare virtualenv
 
-       # you need to have the virtualenvwrapper installed
-       # sudo pip install -U  virtualenvwrapper
-       source /usr/bin/virtualenvwrapper.sh
-       mkvirtualenv wsb-simple-selenium
-       pip install -r test_requirements.txt
+       ::
 
-   - Continue working with virtualenv:
+         source /usr/bin/virtualenvwrapper.sh
+         mkvirtualenv wsb-selenium-intro
 
-     ::
+     - Continue working with virtualenv:
 
-       workon wsb-simple-selenium
+       ::
+
+         workon wsb-selenium-intro
+
+     - Python3:
+
+       ::
+
+         # create python virtualenv
+         python3 -m venv .venv
+         # activate the venv
+         source .venv/bin/activate
 
 2. Install the deps if needed:
 
@@ -45,10 +53,9 @@ Development
        wget https://github.com/mozilla/geckodriver/releases/download/v0.19.1/geckodriver-v0.19.1-linux64.tar.gz
        tar -xvzf geckodriver*tar.gz
        chmod +x geckodriver*
-       export PATH=$PATH:$(pwd)/geckodriver
 
-Uruchamianie
-============
+How to run
+==========
 
 ::
 
